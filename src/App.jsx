@@ -4,7 +4,9 @@ export default function App() {
   const nama = "Raissa" 
 
   const style1 = {
-    color: 'darkblue'
+    color: 'darkblue',
+    fontSize: '25px'
+    
   }
 
   return (
