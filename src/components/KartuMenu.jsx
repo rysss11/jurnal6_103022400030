@@ -1,6 +1,13 @@
-function KartuMenu({nama, harga, kategori}) {
-    const kategori = "Makanan"
+import LabelHarga from "./LabelHarga";
 
+function KartuMenu({nama, harga, kategori = "Makanan"}) {
+    return (
+        <div className="Kartu">
+            <h3>{nama}</h3>
+            <p>{kategori}</p>
+            <LabelHarga nilai={harga}></LabelHarga>
+        </div>
+    );
 }
 
 export default KartuMenu;
